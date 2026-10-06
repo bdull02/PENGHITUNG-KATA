@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Penghitung Kata & Karakter</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="wadah">
+    <h1>Penghitung Kata &amp; Karakter</h1>
+    
+    <textarea id="inputTeks" placeholder="Ketik atau tempel teks Anda di sini..." rows="8"></textarea>
+    
+    <div class="area-statistik">
+      <div class="kotak-stat">
+        <span class="label">Total Karakter</span>
+        <span id="jumlahKarakter" class="angka">0</span>
+      </div>
+
+      <div class="kotak-stat">
+        <span class="label">Total Kata</span>
+        <span id="jumlahKata" class="angka">0</span>
+      </div>
+
+      <div class="kotak-stat">
+        <span class="label">Sisa Kuota</span>
+        <span id="sisaKarakter" class="angka">200</span>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
