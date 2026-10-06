@@ -78,7 +78,7 @@ textarea:focus {
   transition: color 0.2s ease;
 }
 
-/* Warna khusus jika sisa kuota negatif / habis */
+/* jika sisa sisa huruf negatif / habis */
 .habis {
   color: #dc2626 !important;
 }

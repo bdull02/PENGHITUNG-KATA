@@ -1,22 +1,22 @@
-// Ambil elemen DOM yang dibutuhkan
+// ambil elemen
 const inputTeks = document.getElementById('inputTeks');
 const jumlahKarakter = document.getElementById('jumlahKarakter');
 const jumlahKata = document.getElementById('jumlahKata');
 const sisaKarakter = document.getElementById('sisaKarakter');
 
-// Menentukan batas maksimal karakter
+// batas maksimal
 const batasMaksimal = 200;
 
-// Pasang event listener 'input' pada textarea
+// buat event input
 inputTeks.addEventListener('input', function () {
-  // Ambil isi teks yang sedang diketik
+  // ambil teks dari input
   const teks = inputTeks.value;
 
-  // Hitung total karakter
+  // hitung total karakter
   const totalKarakter = teks.length;
   jumlahKarakter.textContent = totalKarakter;
 
-  // Hitung total kata menggunakan trim() dan split(' ')
+  // hitung total kata
   const teksBersih = teks.trim();
   if (teksBersih === '') {
     jumlahKata.textContent = 0;
@@ -25,11 +25,11 @@ inputTeks.addEventListener('input', function () {
     jumlahKata.textContent = daftarKata.length;
   }
 
-  // Hitung sisa kuota karakter
+  // hitung sisa kuota huruf
   const sisa = batasMaksimal - totalKarakter;
   sisaKarakter.textContent = sisa;
 
-  // Ubah warna sisa kuota menjadi merah jika melebihi batas (200 karakter)
+  // ubah warna teks sisa huruf kalo udah melebihi bates
   if (sisa < 0) {
     sisaKarakter.classList.add('habis');
   } else {
